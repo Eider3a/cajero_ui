@@ -20,7 +20,7 @@ export default {
         
         let self = this
         // axios.get("https://cajero-api-1987.herokuapp.com/user/balance/" + this.username)
-        axios.get("https://eider-arango-cajero-ui.herokuapp.com/user/balance/" + this.username)
+        axios.get("https://eider-arango-cajero-ui.herokuapp.com/user/balance" + this.username)
             .then((result) => {
                 self.balance = result.data.balance
             })
