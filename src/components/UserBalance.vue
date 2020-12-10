@@ -23,7 +23,7 @@ export default {
         axios.get("https://eider-arango-cajero-ui.herokuapp.com/user/balance" + this.username)
             .then((result) => {
                 // self.balance = result.data.balance
-
+                console.log(error);
                 self.balance = result
             })
             .catch((error) => {
