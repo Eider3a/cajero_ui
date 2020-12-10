@@ -22,7 +22,8 @@ export default {
         // axios.get("https://cajero-api-1987.herokuapp.com/user/balance/" + this.username)
         axios.get("https://eider-arango-cajero-ui.herokuapp.com/user/balance" + this.username)
             .then((result) => {
-                self.balance = result.data.balance
+                // self.balance = result.data.balance
+                self.balance = 10000
             })
             .catch((error) => {
                 alert("ERROR Servidor");
