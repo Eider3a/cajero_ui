@@ -19,11 +19,11 @@ export default {
         this.username = this.$route.params.username
         
         let self = this
-        // axios.get("https://cajero-api-1987.herokuapp.com/user/balance/" + this.username)
-        axios.get("https://eider-arango-cajero-ui.herokuapp.com/user/balance/" + this.username)
+        axios.get("http://127.0.0.1:60060/user/balance/" + this.username)
+        // axios.get("https://eider-arango-cajero-ui.herokuapp.com/user/balance/" + this.username)
             .then((result) => {
                 // self.balance = result.data.balance
-                console.log(result);
+                console.log(result.data);
                 self.balance = result
             })
             .catch((error) => {
