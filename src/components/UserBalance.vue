@@ -20,7 +20,7 @@ export default {
         
         let self = this
         // axios.get("http://127.0.0.1:60060/user/balance/" + this.username)
-        axios.get("https://eider-arango-cajero-ui.herokuapp.com/user/balance/" + this.username)
+        axios.get("https://eider-arango-cajero-api.herokuapp.com//user/balance/" + this.username)
             .then((result) => {
                 // self.balance = result.data.balance
                 console.log(result);
